@@ -1,17 +1,11 @@
 function main( input ) {
 
-  var opt = "";
+  var opt = 1;
   
-  for( var lt of input ){
-      
-      if( /[a-z]/.test(lt)  ){
-      
-          opt += lt.toUpperCase();
-      }
-      else {
-          
-          opt += lt.toLowerCase();
-      }        
+  while ( input > 0) {
+
+    opt = opt * input;
+    input --;
   }
 
   //Enter your code here
